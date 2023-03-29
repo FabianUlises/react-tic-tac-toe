@@ -3,26 +3,65 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  font-family: system-ui;
+  color: hsl(210 95% 2%);
+}
 .App {
-  background: hsl(210 15% 92%);
+  background: hsl(210 95% 92%);
   block-size: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: .8rem;
 }
 .game-container {
-  background: darkgray;
-  min-width: 300px;
-  max-width: 300px;
+  background: hsl(210 95% 98%);
+  min-inline-size: 300px;
+  max-inline-size: 300px;
   height: 300px;
   display: flex;
   flex-wrap: wrap;
 }
+.circle {
+  block-size: 90px;
+  inline-size: 90px;
+  border-radius: 50%;
+  border: 15px solid blue;
+  box-sizing: border-box;
+}
+.cross {
+  inline-size: 90px;
+  block-size: 90px;
+  position: relative;
+  transform: rotate(45deg);
+}
+.cross::before, .cross::after {
+  content: '';
+  position: absolute;
+  background: red;
+}
+.cross::before {
+  left: 50%;
+  inline-size: 30%;
+  margin-left: -15%;
+  block-size: 100%
+}
+.cross::after {
+  top: 50%;
+  inline-size: 100%;
+  margin-top: -15%;
+  block-size: 30%
+}
 .cell {
   inline-size: 100px;
   block-size: 100px;
-  border: solid 2px black;
+  border: solid 2px hsl(210 95% 2%);
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.message {
+  font-size: 1.7rem;
 }
