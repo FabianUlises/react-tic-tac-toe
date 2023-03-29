@@ -17,6 +17,26 @@ body {
   gap: .8rem;
   padding-block: 1.2rem;
 }
+.App header {
+  inline-size: 300px;
+}
+header span {
+  font-size: 12px;
+  color: red;
+  display: block;
+}
+header button {
+  background: orange;
+  display: block;
+  margin-inline: auto;
+  border: none;
+  border-radius: 8px;
+  padding: .275rem .375rem;
+}
+button:hover {
+  background: rgba(255, 166, 0, 0.639);
+  cursor: pointer;
+}
 .game-container {
   background: hsl(210 95% 98%);
   min-inline-size: 300px;
