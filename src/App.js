@@ -1,4 +1,7 @@
+// Dependencies
 import react, { useState } from 'react';
+// Components
+import  Cell from './components/Cell';
 function App() {
   let [cells, setCells] = useState(['', '', '', '', '', '', '', '', '']);
   return (
@@ -7,7 +10,7 @@ function App() {
         <h1>Tic Tac Toe</h1>
       </header>
       <div className='game-container'>
-
+        <Cell />
       </div>
     </div>
   );
