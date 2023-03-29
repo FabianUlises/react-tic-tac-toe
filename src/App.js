@@ -31,10 +31,6 @@ function App() {
       }
     });
   }
-  // Reset game
-  const resetGame = () => {
-    console.log('button clicked');
-  };
   useEffect(() => {
     console.log('useeffect');
     checkScore();
@@ -44,7 +40,7 @@ function App() {
       <header>
         <h2>Tic-Tac Toe</h2>
         <span>Game contains bug: If you click a cell that is already taken an error with occur and you will need to restart the game.</span>
-        <button onClick={resetGame} type='button'>Reset</button>
+        {/* <button onClick={resetGame} type='button'>Reset</button> */}
       </header>
       <div className='game-container'>
         {cells.map((cell, index) => <Cell key={index} id={index} cell={cell} cells={cells} setCells={setCells} go={go} setGo={setGo} winMessage={winMessage} />)}
