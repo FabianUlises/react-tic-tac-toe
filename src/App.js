@@ -1,5 +1,5 @@
 // Dependencies
-import react, { useState, useEffect } from 'react';
+import  { useState, useEffect } from 'react';
 // Components
 import  Cell from './components/Cell';
 function App() {
