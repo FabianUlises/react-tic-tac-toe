@@ -21,12 +21,12 @@ function App() {
     winningCombos.forEach((array) => {
       let circleWins = array.every(cell => cells[cell] === 'circle');
       if(circleWins) {
-        setWinMessage('Circle !ins!');
+        setWinMessage('Circle Wins!');
         return;
       }
       let crossWins = array.every((cell) => cells[cell] === 'cross');
       if(crossWins) {
-        setWinMessage('Cross !ins!');
+        setWinMessage('Cross Wins!');
         return;
       }
     });
@@ -39,7 +39,7 @@ function App() {
     <div className="App">
 
       <div className='game-container'>
-        {cells.map((cell, index) => <Cell key={index} id={index} cell={cell} cells={cells} setCells={setCells} go={go} setGo={setGo}/>)}
+        {cells.map((cell, index) => <Cell key={index} id={index} cell={cell} cells={cells} setCells={setCells} go={go} setGo={setGo} winMessage={winMessage} />)}
       </div>
       <p className='message'>{winMessage || message}</p>
     </div>

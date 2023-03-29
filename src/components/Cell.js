@@ -19,7 +19,7 @@ const Cell = (props) => {
     const cell = e.target.firstChild;
     // Cell is taken if contains a cross or circle
     const taken = cell.classList.contains('circle') || cell.classList.contains('cross');
-    // If cell is taken
+    // If cell is not taken
     if(!taken) {
       // If go = cricle add classname
       if(props.go === 'circle') {
