@@ -9,12 +9,13 @@ body {
 }
 .App {
   background: hsl(210 95% 92%);
-  block-size: 100vh;
+  min-block-size: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: .8rem;
+  padding-block: 1.2rem;
 }
 .game-container {
   background: hsl(210 95% 98%);

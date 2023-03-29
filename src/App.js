@@ -37,7 +37,9 @@ function App() {
   }, [cells])
   return (
     <div className="App">
-
+      <header>
+        <h2>Tic-Tac Toe</h2>
+      </header>
       <div className='game-container'>
         {cells.map((cell, index) => <Cell key={index} id={index} cell={cell} cells={cells} setCells={setCells} go={go} setGo={setGo} winMessage={winMessage} />)}
       </div>
