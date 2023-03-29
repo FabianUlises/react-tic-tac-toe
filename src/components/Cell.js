@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Cell = () => {
+const Cell = (props) => {
   return (
-    <div className='cell'></div>
+    <div id={props.id} className='cell'></div>
   )
 };
 export default Cell;

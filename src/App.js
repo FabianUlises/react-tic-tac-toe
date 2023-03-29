@@ -6,11 +6,8 @@ function App() {
   let [cells, setCells] = useState(['', '', '', '', '', '', '', '', '']);
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Tic Tac Toe</h1>
-      </header>
       <div className='game-container'>
-        <Cell />
+        {cells.map((cell, index) => <Cell key={index} id={index} cell={cell} />)}
       </div>
     </div>
   );
