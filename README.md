@@ -1,6 +1,6 @@
 # Tic Tac Toe with React
 Game programmed with react. Manipulating state and updating dom class names.
-has a current bug taht prevents user from clicking occupied cell.
+has a current bug that prevents user from clicking occupied cell.
 
 ## Available Scripts
 
